@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minh Phát Mobile – Điện thoại chính hãng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">Minh Phát Mobile</a>
+    <nav>
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Mở giỏ hàng">Giỏ hàng <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Điện thoại chính hãng, giá rõ ràng.</h1>
+        <p>Bảo hành 12 tháng, đổi mới trong 30 ngày nếu máy lỗi. Giao hàng toàn quốc.</p>
+        <a class="btn" href="#san-pham">Xem điện thoại</a>
+      </div>
+      <div class="hero-phone" aria-hidden="true">
+        <div class="phone big"><div class="screen"></div></div>
+      </div>
+    </section>
+
+    <section id="san-pham" class="products">
+      <h2>Điện thoại đang bán</h2>
+      <div class="filters" id="filters">
+        <button class="chip active" data-brand="all">Tất cả</button>
+        <button class="chip" data-brand="Apple">Apple</button>
+        <button class="chip" data-brand="Samsung">Samsung</button>
+        <button class="chip" data-brand="Xiaomi">Xiaomi</button>
+        <button class="chip" data-brand="OPPO">OPPO</button>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="perks">
+      <div><strong>Bảo hành 12 tháng</strong><span>Tại mọi chi nhánh</span></div>
+      <div><strong>Đổi mới 30 ngày</strong><span>Nếu máy lỗi do nhà sản xuất</span></div>
+      <div><strong>Trả góp 0%</strong><span>Duyệt nhanh trong 15 phút</span></div>
+    </section>
+  </main>
+
+  <footer id="lien-he">
+    <p><strong>Minh Phát Mobile</strong> · 123 Nguyễn Trãi, Quận 1, TP.HCM</p>
+    <p>Hotline: 0900 000 000 · Mở cửa 8:00 – 21:00 mỗi ngày</p>
+  </footer>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Giỏ hàng</h3>
+      <button id="closeCart" aria-label="Đóng giỏ hàng">Đóng</button>
+    </div>
+    <ul id="cartList"></ul>
+    <div class="drawer-foot">
+      <p>Tổng cộng: <strong id="cartTotal">0 ₫</strong></p>
+      <button class="btn" id="checkout">Đặt hàng</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
