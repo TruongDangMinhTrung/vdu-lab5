@@ -1,1 +1,1 @@
-Đây là dự án của tôi
+docs: update README with project description
